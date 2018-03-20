@@ -2,12 +2,12 @@
 #include "pracownik.h"
 
 
-void pracownik::pokaz() const
+void Tworker::pokaz() const
 {
-	std::cout << "Pan/ni: " << nazwisko() << "\tWiek " << '\t' << liczba_lat() << '\t' << stanowisko_ << '\t' << placa_ << std::endl;
+	std::cout << "Pan/ni: " << nazwisko() << "\tWiek " << '\t' << liczba_lat() << '\t' << job << '\t' << salary << std::endl;
 }
 
-void pracownik::pokaz2() const
+void Tworker::pokaz2() const
 {
-	std::cout << "Pan/ni: " << nazwisko() << "\tWiek " << '\t' << liczba_lat() << '\t' << stanowisko_ << '\t' << placa_ << std::endl;
+	std::cout << "Pan/ni: " << nazwisko() << "\tWiek " << '\t' << liczba_lat() << '\t' << job << '\t' << salary << std::endl;
 }

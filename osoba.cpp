@@ -2,12 +2,12 @@
 #include "osoba.h"
 
 
-void osoba::pokaz() const
+void Tperson::pokaz() const
 {
-	std::cout << "Pan/ni: " << nazwisko_ << "\tWiek " << liczba_lat_ << std::endl;
+	std::cout << "Mr/Mrs: " << name << "\tAge " << age << std::endl;
 }
 
-void osoba::pokaz2() const
+void Tperson::pokaz2() const
 {
-	std::cout << "Pan/ni: " << nazwisko_ << "\tWiek " << liczba_lat_ << std::endl;
+	std::cout << "Mr/Mrs: " << name << "\tAge " << age << std::endl;
 }

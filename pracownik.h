@@ -1,22 +1,23 @@
 #pragma once
 #include "osoba.h"
 
-class pracownik : public osoba
+class Tworker : public Tperson
 {
-	std::string stanowisko_;
-	double placa_;
+	std::string job;
+	double salary;
 
 
 public:
 
-	pracownik() : stanowisko_("brak"), placa_(0.0) {};
-	pracownik(const std::string& nazwi, const int& licz, std::string stan, double pl) : osoba(nazwi, licz), stanowisko_(stan), placa_(pl) {}
+	Tworker() : job("brak"), salary(0.0) {};
+	Tworker(const std::string& nazwi, const int& licz, std::string stan, double pl) : Tperson(nazwi, licz), job(stan), salary(pl) {}
 
-	const std::string& stanowisko() const { return stanowisko_; }
-	const double& placa() const { return placa_; }
+	const std::string& stanowisko() const { return job; }
+	const double& placa() const { return salary; }
 
 	void pokaz() const;
 	virtual void pokaz2() const;
+
 
 };
 
